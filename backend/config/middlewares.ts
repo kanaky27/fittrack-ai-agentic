@@ -8,8 +8,8 @@ const config: Core.Config.Middlewares = [
     name: 'strapi::cors',
     config: {
       origin: [
-        'https://frontend-tau-eight-20.vercel.app', 
-        'https://frontend-9jkizcqkw-fit-track-ai.vercel.app',
+        'https://frontend-fit-track-ai.vercel.app',
+        'https://frontend-tau-eight-20.vercel.app',
         'http://localhost:5173'
       ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
