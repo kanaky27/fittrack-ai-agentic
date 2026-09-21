@@ -8,3 +8,23 @@ build/
 *.db
 *.sqlite
 .DS_Store
+
+# Temporary files
+*.py
+*.sh
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.node.json
+!tsconfig.app.json
+!backend/package.json
+!backend/package-lock.json
+!frontend/package.json
+!frontend/package-lock.json
+!frontend/.eslintrc.cjs
+!frontend/.oxlintrc.json
+test_prod*.js
+assets.zip
+tutorial_assets/
+video_info.json
