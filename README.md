@@ -3,7 +3,7 @@
 FitTrack AI is a modern, full-stack fitness and nutrition tracking application powered by generative AI. It allows users to track their meals, log activities, and receive personalized fitness coaching directly from an intelligent AI assistant.
 
 ## Live Demo & Repository
-- **Live Frontend**: [https://frontend-5y8titpxy-fit-track-ai.vercel.app](https://frontend-5y8titpxy-fit-track-ai.vercel.app) *(Placeholder)*
+- **Live Frontend**: [https://frontend-fit-track-ai.vercel.app](https://frontend-fit-track-ai.vercel.app) *(Placeholder)*
 - **Live Backend**: [https://fittrack-ai-api.onrender.com](https://fittrack-ai-api.onrender.com) *(Placeholder)*
 - **GitHub Repository**: [https://github.com/kanaky27/fittrack-ai-agentic](https://github.com/kanaky27/fittrack-ai-agentic) *(Placeholder)*
 
