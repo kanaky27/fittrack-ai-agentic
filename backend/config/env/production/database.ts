@@ -1,6 +1,6 @@
 import { parse } from 'pg-connection-string';
 
-export default ({ env }) => {
+export default ({ env }: { env: any }) => {
   const databaseUrl = env('DATABASE_URL');
   
   if (databaseUrl) {
