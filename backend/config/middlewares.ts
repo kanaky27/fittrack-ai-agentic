@@ -7,7 +7,11 @@ const config: Core.Config.Middlewares = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://frontend-5y8titpxy-fit-track-ai.vercel.app', 'http://localhost:5173'],
+      origin: [
+        'https://frontend-tau-eight-20.vercel.app', 
+        'https://frontend-9jkizcqkw-fit-track-ai.vercel.app',
+        'http://localhost:5173'
+      ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
