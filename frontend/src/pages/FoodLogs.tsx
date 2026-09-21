@@ -102,17 +102,13 @@ export default function FoodLogs() {
         const startTime = Date.now();
         setAiLoading(true);
         try {
-            console.log(`[Food AI] Starting image compression...`);
-            const base64Data = await compressImage(file);
-            console.log(`[Food AI] Image compression took ${Date.now() - startTime}ms`);
-
-            console.log(`[Food AI] Calling backend...`);
-            const aiStartTime = Date.now();
+                        const base64Data = await compressImage(file);
+            
+                        const aiStartTime = Date.now();
             const res = await api.post('/analyze-food', { imageBase64: base64Data }, {
                 headers: { Authorization: `Bearer ${user?.token}` }
             });
-            console.log(`[Food AI] Backend processing took ${Date.now() - aiStartTime}ms`);
-
+            
             const parsed = res.data.data;
             if (!parsed || !parsed.name || parsed.calories === undefined) {
                 throw new Error("Invalid response format from backend.");
@@ -123,8 +119,7 @@ export default function FoodLogs() {
                 calories: parsed.calories.toString(),
                 mealType: 'snack'
             });
-            console.log(`[Food AI] Total processing time: ${(Date.now() - startTime) / 1000} seconds`);
-
+            
         } catch (error: any) {
             console.error("Food analysis error:", error);
             alert("The AI service is temporarily unavailable. Please try again.");
