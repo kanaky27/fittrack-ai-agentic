@@ -12,7 +12,7 @@ build/
 # Temporary files
 *.py
 *.sh
-*.json
+#*.json
 !package.json
 !package-lock.json
 !tsconfig.json
